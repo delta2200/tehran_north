@@ -12,7 +12,7 @@ def home_view(request, *args, **kwargs):
         'my_address': 'tehran',
         'title': 'Home',
         'my_phone_numbers':[
-                912,938,267,652,902,542
+                912,938,267,652,902
         ]
 
     }
