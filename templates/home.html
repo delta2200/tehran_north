@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{%block CSS%}
+<style></style>
+{%endblock%}
+
+{% block Content %}
+    <h1>this is a new test in template</h1>
+    <h2>{{ request.user.is_authenticated }}</h2>
+    <h3>{{ my_number }}, {{ my_address }}</h3>
+    <ul>{% for number in my_phone_numbers%}
+        {% if number == 912 %}
+            <li>{{ number }}</li>
+        {% elif number == 902 %}
+        <li><strong>{{number }} is a IranCell Number</strong></li>
+        {%else%}
+            <li>{{ number }} is not hamre avale</li>
+        {%endif%}
+
+    {% endfor %}
+</ul>
+    
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{%block CSS%}
+<style></style>
+{%endblock%}
+
+{% block Content %}
+    <h3>Type 2</h3>
+    <ul>
+        {% for instance in object_list%}
+       <li><a href="{{instance.get_absolute_url}} "> {{instance.title}} </a> </li> 
+        {% endfor%}
+    </ul>
+    
+{% endblock %}

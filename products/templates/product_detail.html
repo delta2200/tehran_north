@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{%block CSS%}
+<style></style>
+{%endblock%}
+
+{% block Content %}
+    <ul>
+       <li>{{obj.title}}</li>
+       <li>{{ obj.description}}</li>
+       <li>{{ obj.price}}</li>
+       <li>{{ obj.technial_desc}}</li>
+    </ul>
+    
+{% endblock %}
